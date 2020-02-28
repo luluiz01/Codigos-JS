@@ -11,7 +11,12 @@ e o aluno será aprovado.
 function avaliarAluno(nota) {
     if (nota < 40) {
         return 'Reprovado'
+    } else if(nota - ){
+
     }
+
+
+
     if (nota % 5 == 0) {
         return 'É multiplo de 5'
     } else {
