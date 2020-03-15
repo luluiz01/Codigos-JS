@@ -16,7 +16,7 @@ Deve resultar em:
 1024
 
  */
-function potencia(n, x = '') {
+potencia = (n, x = '') => {
     if (x == '') {
         let potencia = n ** 2
         console.log(potencia)

@@ -3,7 +3,7 @@
 
  */
 
-function numprint(n) {
+numprint = (n) => {
     if (n == 50) {
         console.log(n)
         return n

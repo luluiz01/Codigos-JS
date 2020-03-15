@@ -4,9 +4,9 @@
 
 Ex.: calc(2, 15,10) deve retornar 150.
  */
-function calc(op, a, b) {
+calc = (op, a, b) => {
 
-    function adiciona() {
+    adiciona = () => {
         if (op == 0) {
             let soma = a + b
             console.log(`A soma é: ${soma}`)
