@@ -2,10 +2,20 @@
  * A função não deve conter nenhuma estrutura de loop.
 
  */
-function numprint(n) {
-    for (let i = 50; i >= n; i--) {
-        console.log(n)
-    }
 
+function numprint(n) {
+    if (n == 50) {
+        console.log(n)
+        return n
+
+    } else if (n >= 50) {
+        console.log(n)
+        return n * numprint(n - 1)
+    } else {
+        console.log(n)
+        return n * numprint(n + 1)
+    }
 }
-numprint('cebol')
+
+
+numprint(45)
