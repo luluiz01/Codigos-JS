@@ -1,11 +1,7 @@
-body {
-    background-color: rgb(168, 112, 112);
+#conteudo {
+    padding: 30px 0px;
 }
 
-h1 {
-    font-style: italic;
-}
-
-.sobrenome {
-    font-size: 30px;
+body{
+    background-color:#f5dfdf;
 }
