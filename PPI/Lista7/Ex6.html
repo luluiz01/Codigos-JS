@@ -1,0 +1,49 @@
+<!--6. Baseado no seguinte código HTML, faça com que, quando o botão for clicado, seja modificado:
+
+O texto da da tag <h1>
+O texto do span com id nomeaqui
+O texto do segundo parágrafo
+A url da imagem
+(Não modifique o código HTML, além do mínimo necessário para inserir as referências ao código Javascript).
+
+<!DOCTYPE html>
+<body>
+    <h1>Programação para Internet 1</h1>
+    <p>Bem vindo, <span id="nomeaqui"></span>!</p>
+    <p>Esse é o texto do segundo parágrafo</p>
+    <p><img id="imagem" src="https://upload.wikimedia.org/wikipedia/pt/4/4e/Goomba.png" style="width:120px"></p>
+    <button>Muda conteúdo</button>
+    </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2</title>
+</head>
+
+<body>
+    <h1 id="mudar">Programação para Internet 1</h1>
+    <p>Bem vindo, <span id="nomeaqui"></span>!</p>
+    <p id="ep">Esse é o texto do segundo parágrafo</p>
+    <p><img id="imagem" src="https://i.pinimg.com/originals/39/e0/f1/39e0f1f1281e62e8bf2520012074ef30.jpg"
+            style="width:120px"></p>
+    <button onclick="funcao()">Muda conteúdo</button>
+
+
+    <script>
+        function funcao() {
+            document.getElementById("mudar").innerHTML = "Programação para Internet 2";
+            document.getElementById("nomeaqui").innerHTML = "Luiz";
+            document.getElementById("ep").innerHTML = "Este não é mais o texto do segundo parágrafo";
+            document.getElementById("imagem").src = "https://i.pinimg.com/originals/0c/14/41/0c1441647638de31d9c72f1969a8145a.jpg"
+        }
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,20 @@
+<!--1. Crie uma página HTML simples, que contenha em algum lugar um elemento (div, span ou p) com id="texto". 
+    Crie um botão que, ao ser clicado, mude o texto deste elemento.-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="paragrafo">Olá mundo</p>
+
+    <button onclick="funcao()">Clique para mudar o texto</button>
+
+    <script>
+        function funcao() {
+            document.getElementById("paragrafo").innerHTML = "Texto Alterado com sucesso!";
+        }
+    </script>
+
+</body>
+
+</html>

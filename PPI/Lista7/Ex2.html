@@ -1,0 +1,27 @@
+<!--Crie um elemento HTML cujo texto seja modificado quando o cursor do mouse está sobre ele e volte
+     ao texto original quando o cursor não estiver mais.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2</title>
+</head>
+
+<body>
+
+    <p id="paragrafo" onmousemove="mudarTexto()" onmouseout="voltarTexto()">Passe o mouse</p>
+
+    <script>
+        function mudarTexto() {
+            document.getElementById("paragrafo").innerHTML = "Retire o mouse!";
+        }
+        function voltarTexto() {
+            document.getElementById("paragrafo").innerHTML = "Parabéns, você tirou o mouse";
+        }
+    </script>
+
+</body>
+
+</html>
